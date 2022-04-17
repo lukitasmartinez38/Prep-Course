@@ -1,0 +1,36 @@
+Los objetos en javaScript (objets) contenedores; 
+que heredan propiedades,
+*Propiedades;
+cuyas propiedades pueden ser sobre-escritas, como tambien se
+pueden crear con parametros para que no se ejecuten nunca!
+ej: objet.create (null).
+(las propiedades son vaores que heredan los objetos)
+Metodos; 
+por lo que entiendo yo, los metodos son 
+palabras claves para invocar a objetos, 
+
+son estaticos!
+
+Bucles;
+los bucles se crean con el fin de obtener repetidas veces funciones
+de manera simultanea,
+existen diferentes maneras de declarar esas funciones;
+--- con el ciclo for se repite una funciones 
+hasta que la condicion declarada por el bucle sea false;
+--- el bucle for se interpreta con las sigientes caracteristicar;
+
+=== se ejecuta la exprecion de iniciasion;
+
+=== se evalua la expecion o condicion;
+
+=== se ejecuta la instruccion de la declaracion;
+
+=== se ejecuta una y otra ves hasta que la condicion declarada sea (false)
+ 
+ **** declaracion for...in 
+ itera una variable espesifica sobre todas las propiedades 
+ enumeradas de un objeto.
+ 
+ *** hay dos metodos para que js- acceda a las propiedades del objeto,
+ el primero es la notacion  de puntos, el segundo es la notacion de corchetes,entre corchetes se pueden almacenar atributos en una variable!
+

@@ -63,7 +63,7 @@ function multiplica(x, y) {
   
 }
 
-function divide(x, y) {
+function divide(x, y) { 
   // Divide "x" entre "y" y devuelve el valor
   // Tu código: 
   let divide = x / y;
@@ -79,7 +79,7 @@ function sonIguales(x, y) {
   if (x === y) {
     return true;
   } else{
-    return false;
+    return false; git 
   }
 }
   

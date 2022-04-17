@@ -37,7 +37,12 @@ Hay un par de objetos Javascript que realmente no encajan en ningún tipo de dat
 console.log(variableInexistente); // undefined
 ```
 
-`null` es un objeto que nosotros, los desarrolladores, establecemos cuando queremos decirles a otros desarrolladores que el elemento que están buscando existe, pero no hay ningún valor asociado con él. Mientras que `undefined` está configurado por Javascript, `null` está configurado por un desarrollador. Si alguna vez recibes `null`, debes saber que otro desarrollador estableció ese valor en `null`
+`null` es un objeto que nosotros, los desarrolladores, 
+establecemos cuando queremos decirles a otros desarrolladores 
+que el elemento que están buscando existe, pero no hay ningún
+valor asociado con él. Mientras que `undefined` está configurado por Javascript,
+ `null` está configurado por un desarrollador. Si alguna vez recibes `null`, 
+ debes saber que otro desarrollador estableció ese valor en `null`
 
 ```javascript
 let numeroTelefono = '11-1234-5678';
@@ -46,11 +51,18 @@ numeroTelefono = null;
 numeroTelefono; // null
 ```
 
-Una última cosa a tener en cuenta, ni `undefined` ni `null` son cadenas, están escritas tal como están sin comillas, como un booleano.
+Una última cosa a tener en cuenta, ni `undefined` ni `null` son cadenas, 
+están escritas tal como están sin comillas, como un booleano.
 
 ## Veracidad
 
-En estas lecciones hemos hablado sobre los valores booleanos, `true` y `false`. Cuando se usa una declaración `if` u otra declaración que espera un valor booleano (como `!`, _NOT_), y la expresión dada no es un valor booleano, Javascript hará algo llamado "coerción de tipo" y transformará lo que sea que se le entregue a un valor booleano. Esto se conoce como "truthy" y "falsey". Cada tipo de datos tiene una veracidad. Acá hay unos ejemplos:
+En estas lecciones hemos hablado sobre los valores booleanos,
+ `true` y `false`. Cuando se usa una declaración `if` u otra declaración que espera
+  un valor booleano (como `!`, _NOT_), y la expresión dada no es un valor booleano,
+   Javascript hará algo llamado "coerción de tipo" y transformará lo que sea que se
+    le entregue a un valor booleano. Esto se conoce como "truthy" y "falsey".
+    
+     Cada tipo de datos tiene una veracidad. Acá hay unos ejemplos:
 
 ```javascript
 // Datos que son forzados a verdaderos/"true"
@@ -71,9 +83,17 @@ null
 
 ## Operadores de comparación (continuación)
 
-En la última lección usamos operadores de comparación, ahora profundizaremos un poco más sobre cómo funcionan y luego presentaremos un pariente cercano de operadores de comparación, los "operadores lógicos".
+En la última lección usamos operadores de comparación,
+ ahora profundizaremos un poco más sobre cómo funcionan 
+ y luego presentaremos un pariente cercano de operadores de comparación,
+  los "operadores lógicos".
 
-En la última lección presentamos nuestros operadores de comparación, (`>` `>=` `<` `<=` `===` `!==`). Estos operadores funcionan como lo harían en una clase de matemáticas, mayor que, menor que, etc. Utilizamos estos operadores para evaluar dos expresiones. A medida que la computadora ejecuta el código, el operador devolverá un `verdadero` (si la declaración es verdadera) o un `falso`.
+En la última lección presentamos nuestros operadores de comparación,
+ (`>` `>=` `<` `<=` `===` `!==`). Estos operadores funcionan como lo harían 
+ en una clase de matemáticas, mayor que, menor que, etc. 
+ Utilizamos estos operadores para evaluar dos expresiones.
+  A medida que la computadora ejecuta el código, el operador devolverá un `verdadero` 
+  (si la declaración es verdadera) o un `falso`.
 
 ```javascript
 1 > 2;     // false
@@ -82,9 +102,14 @@ En la última lección presentamos nuestros operadores de comparación, (`>` `>=
 100 <= 1;  // false
 ```
 
-El "triple igual" (`===`) no debe confundirse con un solo signo igual (que indica asignar un valor a una variable). El triple igual comparará todo sobre los dos elementos, incluido el tipo, y devolverá si son exactamente iguales o no:
+El "triple igual" (`===`) no debe confundirse con un solo signo igual
+ (que indica asignar un valor a una variable). El triple igual comparará todo sobre
+  los dos elementos, incluido el tipo, y devolverá si son exactamente iguales o no:
 
-(Algo a tener en cuenta: hay un "doble igual" (`==`) que comparará dos elementos, pero NO tendrá en cuenta sus tipos (`1 == '1' // verdadero`). Debido a esto , se considera una mala práctica usar el doble igual. Nos gustaría verte siempre usando el triple, y siempre nos verás usándolo.)
+(Algo a tener en cuenta: hay un "doble igual" (`==`) que comparará dos elementos,
+ pero NO tendrá en cuenta sus tipos (`1 == '1' // verdadero`). Debido a esto ,
+  se considera una mala práctica usar el doble igual. Nos gustaría verte siempre usando
+   el triple, y siempre nos verás usándolo.)
 
 ```javascript
 1 === 1;          // true
@@ -95,9 +120,13 @@ El "triple igual" (`===`) no debe confundirse con un solo signo igual (que indic
 
 El último operador de comparación que nos gustaría presentarle tiene dos partes.
 
-Primero es el "NOT" (`!`). Cuando veas esto significará que estamos preguntando lo contrario de la expresión (volveremos a visitar el operador NOT más adelante en esta lección).
+Primero es el "NOT" (`!`). Cuando veas esto significará que estamos preguntando 
+lo contrario de la expresión (volveremos a visitar el operador NOT más adelante
+ en esta lección).
 
-Con eso en mente, podemos introducir el "no es igual" (`!==`). Esto devolverá verdadero si los artículos NO son iguales entre sí de alguna manera. Esto, como el triple igual, tiene en cuenta el tipo de dato.
+Con eso en mente, podemos introducir el "no es igual" (`!==`). 
+Esto devolverá verdadero si los artículos NO son iguales entre sí de alguna manera. 
+Esto, como el triple igual, tiene en cuenta el tipo de dato.
 
 ```javascript
 1 !== 1;          // false
@@ -108,7 +137,10 @@ Con eso en mente, podemos introducir el "no es igual" (`!==`). Esto devolverá v
 
 ## Flujos de control (continuación)
 
-En la última lección aprendimos sobre el operador `if`. Podemos usar `if` para verificar y ver si una expresión es `true`, si es así, ejecute algún código, o si no es así, que omita el código y siga ejecutando el programa.
+En la última lección aprendimos sobre el operador `if`.
+ Podemos usar `if` para verificar y ver si una expresión es `true`,
+  si es así, ejecute algún código, o si no es así,
+   que omita el código y siga ejecutando el programa.
 
 ```javascript
 if (1 + 1 === 2) {
@@ -116,7 +148,14 @@ if (1 + 1 === 2) {
 }
 ```
 
-Para complementar a `if`, también podemos usar las declaraciones `else if` y `else`. Estas declaraciones deben usarse con `if` y deben venir después de él. Estas declaraciones serán evaluadas si el inicial `if` devuelve `false`. Podemos pensar en el `else if` como otra declaración `if` que se ha encadenado (podemos tener tantas otras declaraciones `if` que queramos). Solo se ejecutará un bloque de código de instrucción `if` o `else if`. Si en algún momento una declaración devuelve `true`, ese código se ejecutará y el resto se omitirá:
+Para complementar a `if`, también podemos usar las declaraciones `else if` y `else`.
+ Estas declaraciones deben usarse con `if` y deben venir después de él. 
+ Estas declaraciones serán evaluadas si el inicial `if` devuelve `false`. 
+ Podemos pensar en el `else if` como otra declaración `if` que se ha encadenado
+  (podemos tener tantas otras declaraciones `if` que queramos).
+   Solo se ejecutará un bloque de código de instrucción `if` o `else if`. 
+   Si en algún momento una declaración devuelve `true`, ese código se ejecutará y 
+   el resto se omitirá:
 
 ```javascript
 if (false) {
@@ -128,7 +167,8 @@ if (false) {
 }
 ```
 
-La declaración `else` siempre aparecerá al final de una cadena `if-else` o `if`, y actuará de manera predeterminada. Si ninguna de las expresiones devuelve `true`, el bloque de código `else` se ejecutará sin importar qué. Si alguna de las expresiones anteriores `if` o `else if` son `true`, el bloque de código de instrucción `else` no se ejecutará.
+La declaración `else` siempre aparecerá al final de una cadena `if-else` o `if`, 
+y actuará de manera predeterminada. Si ninguna de las expresiones devuelve `true`, el bloque de código `else` se ejecutará sin importar qué. Si alguna de las expresiones anteriores `if` o `else if` son `true`, el bloque de código de instrucción `else` no se ejecutará.
 
 ```javascript
 if (false) {
@@ -215,9 +255,11 @@ En este ejemplo, vemos que inicialmente establecemos nuestra variable `i` en 0, 
 
 ### El operador ++
 
-Vimos en el último ejemplo el operador `++`. Esta es la abreviatura de Javascript para "Establecer el valor de la variable a su valor actual más uno". Hay algunas más de estas expresiones abreviadas de matemática / asignación variable, las visitaremos en las próximas lecciones.
+Vimos en el último ejemplo el operador `++`. Esta es la abreviatura de Javascript para  
 
-### Bucles infinitos
+"Establecer el valor de la variable a su valor actual más uno". Hay algunas más de estas expresiones abreviadas de matemática / asignación variable, las visitaremos en las próximas lecciones.
+
+### Bucles infinitos 
 
 Es posible que un bucle se atasque en lo que llamamos un "bucle infinito". Debes asegurarte de que haya una forma de finalizar el bucle. Ejemplo de un bucle infinito:
 

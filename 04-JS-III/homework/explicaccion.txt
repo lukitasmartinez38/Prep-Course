@@ -1,0 +1,4 @@
+arrays:
+los arrays son posiciones en un contenedor que proporcionan metodos para ejecutar operaciones de recorridos y mutacion.
+la longitud y el tipo son variablas!
+//fuente de informacion... developers.mozilla.org  

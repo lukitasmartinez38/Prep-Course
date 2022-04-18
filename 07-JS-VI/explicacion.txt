@@ -1,0 +1,15 @@
+cllback en javaScrip;
+ *** los callbacks aseguran que una
+  funcion no se valla a ejecutar 
+ antes de que se complete la tarea;
+ *** una funcion de callback, es una funcion 
+ que se pasa a otra funcion como argumento;
+ a la que se invoca dentro de la funcion externa algun tipo de accion o rutina...
+
+ ***hay que tener en cuenta que la 
+ funcion callbacka, se utiliza para continuar 
+ con la ejecucion del codigo despues 
+ de que se haya completado
+  una operacion sincronica!
+  estas se denominan devoluciones de llamadas asincronicas.
+

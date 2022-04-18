@@ -141,7 +141,7 @@ function sumarLikesDeUsuario(usuario) {
     suma = suma + usuario.posts[i].likes;
   }
   return suma;
-}
+};
 
 function agregarMetodoCalculoDescuento(producto) {
   // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"

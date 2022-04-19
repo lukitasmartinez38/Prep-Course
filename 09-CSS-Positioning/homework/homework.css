@@ -7,32 +7,93 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
-
+  display: flex;
+  text-align: center;
 }
+
 
 
 /* Ejercicio 2: Posicionar el header */
 
 /* Acá va tu código */
+#ejercicioDos {
+  display: flex;
+  justify-content: center;
+  border: none;
+}
+
 
 
 
 /* Ejercicio 3: */
 
 /* Acá va tu código */
+#ejercicioTres {
+  position: absolute;
+  margin-left: 200px;
+  margin-right: 400px;
+  margin-top: 100px; 
+}
 
 
 
 /* Ejercicio 4: */
 
 /* Acá va tu código */
+#ejercicioCuatro {
+  position:fixed;
+  width: 100%;
+  height: 150px;
+  top:0;
+  padding: 10px;
 
+   
+}
 
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
 
+#ejercicioCinco  {
+  display: flex ;
+  flex-direction: column;
+  justify-content: space-between;
 
+}
 
+#ejercicioCinco img {
+  display: flex;
+  position: static;
+  height: 80px;
+  width: 250px;
+  margin-top: 40px;
+  margin-left: -200px;
+ 
+  
+}
+#ejercicioCinco {
+  flex-direction: row-reverse;
+  display: flex;
+  width: 100%;
+ 
+}
 /* Ejercicio 6. */
+
+
+#ejercicioCinco span {
+  margin-top: 120px;
+  margin-left: 10px;
+  margin-right: 50px;
+  align-self: center;
+}
+  #ejercicioSiete{
+    display: flex;
+    position:static;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* nota: no se si estan bien empleadas las propiedades
+de flexbox,me resulto confuso al no poder tocar el homework.html*/
